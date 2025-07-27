@@ -41,7 +41,7 @@ const Header = () => {
                 <img 
                   src={logo} 
                   alt="FanFirst Studio Logo" 
-                  className="h-50 w-50 sm:h-7 sm:w-7 object-contain filter"
+                  className="h-50 w-50 sm:h-15 sm:w-15 object-contain filter"
                 /> 
         
             </div> 
