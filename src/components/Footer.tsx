@@ -8,6 +8,7 @@ import {
 } from 'lucide-react';
 import { useLanguage } from '../contexts/LanguageContext';
 import Modal from './Modal';
+import logo from '../assets/nonamelogofixed.png';
 
 const Footer = () => {
   const { t } = useLanguage();
@@ -270,8 +271,12 @@ const Footer = () => {
             {/* Company Info */}
             <div className="lg:col-span-2">
               <div className="flex items-center space-x-3 mb-6">
-                <div className="bg-gradient-to-r from-purple-600 to-blue-600 p-3 rounded-2xl shadow-lg">
-                  <Star className="h-7 w-7 text-white" />
+                <div className="flex items-center">
+                  <img 
+                    src={logo} 
+                    alt="FanFirst Studio Logo" 
+                    className="h-12 w-12 sm:h-14 sm:w-14 object-contain filter brightness-0 invert"
+                  />
                 </div>
                 <div>
                   <span className="text-2xl font-bold text-white drop-shadow-md">
