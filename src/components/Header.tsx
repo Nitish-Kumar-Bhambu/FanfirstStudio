@@ -33,27 +33,30 @@ const Header = () => {
     }`}>
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between items-center h-20">
-          <div className="flex items-center space-x-3 group">
-            <div className="relative flex items-center">
-              <img 
-                src={logo} 
-                alt="FanFirst Studio Logo" 
-                className="h-10 w-10 sm:h-12 sm:w-12 md:h-14 md:w-14 object-contain filter brightness-0 invert"
-              />
-            </div>
-            <div className="flex flex-col">
-              <span className="font-display text-lg sm:text-2xl font-bold text-white tracking-tight">
-                FanFirst
-              </span>
-              <span className="font-display text-xs sm:text-sm font-medium gradient-text tracking-wider">
-                STUDIO
-              </span>
-            </div>
-            <div className="hidden md:flex items-center ml-4 glass px-3 py-1 rounded-full">
-              <Shield className="h-3 w-3 text-purple-400 mr-1" />
-              <span className="text-xs text-purple-300 font-semibold tracking-wide">ELITE</span>
-            </div>
-          </div>
+          <div className="flex items-center gap-4 group">
+  <div className="w-16 h-16 sm:w-20 sm:h-20 md:w-24 md:h-24 flex items-center justify-center">
+    <img 
+      src={logo} 
+      alt="FanFirst Studio Logo" 
+      className="w-full h-full object-contain filter brightness-0 invert"
+    />
+  </div>
+  
+  <div className="flex flex-col">
+    <span className="font-display text-xl sm:text-2xl md:text-3xl font-bold text-white tracking-tight leading-none">
+      FanFirst
+    </span>
+    <span className="font-display text-sm sm:text-base md:text-lg font-medium gradient-text tracking-wider leading-none">
+      STUDIO
+    </span>
+  </div>
+
+  <div className="hidden md:flex items-center ml-4 glass px-3 py-1 rounded-full">
+    <Shield className="h-3 w-3 text-purple-400 mr-1" />
+    <span className="text-xs text-purple-300 font-semibold tracking-wide">ELITE</span>
+  </div>
+</div>
+
           
           <nav className="hidden lg:flex items-center space-x-4 xl:space-x-8">
             {[
