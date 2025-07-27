@@ -1,7 +1,8 @@
 import React, { useState, useEffect } from 'react';
-import { Menu, X, Sparkles, Shield, Zap, Globe } from 'lucide-react';
+import { Menu, X, Shield, Zap, Globe } from 'lucide-react';
 import { useLanguage } from '../contexts/LanguageContext';
 import LanguageSelector from './LanguageSelector';
+import logo from '../assets/nonamelogo.png';
 
 const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -35,8 +36,12 @@ const Header = () => {
           <div className="flex items-center space-x-3 group">
             <div className="relative">
               <div className="absolute inset-0 gradient-primary rounded-2xl blur-lg opacity-60 group-hover:opacity-100 transition-opacity duration-300"></div>
-              <div className="relative gradient-primary p-2 sm:p-3 rounded-2xl">
-                <Sparkles className="h-5 w-5 sm:h-7 sm:w-7 text-white animate-pulse" />
+              <div className="relative gradient-primary p-2 sm:p-3 rounded-2xl flex items-center justify-center">
+                <img 
+                  src={logo} 
+                  alt="FanFirst Studio Logo" 
+                  className="h-5 w-5 sm:h-7 sm:w-7 object-contain filter brightness-0 invert"
+                />
               </div>
             </div>
             <div className="flex flex-col">
