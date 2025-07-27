@@ -38,10 +38,10 @@ const Header = () => {
     <img 
       src={logo} 
       alt="FanFirst Studio Logo" 
-      className="w-1000px h-1000px object-contain filter brightness-0 invert"
+      className="w-full h-full object-contain filter brightness-0 invert"
     />
   </div>
-  
+
   <div className="flex flex-col">
     <span className="font-display text-xl sm:text-2xl md:text-3xl font-bold text-white tracking-tight leading-none">
       FanFirst
@@ -56,6 +56,7 @@ const Header = () => {
     <span className="text-xs text-purple-300 font-semibold tracking-wide">ELITE</span>
   </div>
 </div>
+
 
           
           <nav className="hidden lg:flex items-center space-x-4 xl:space-x-8">
