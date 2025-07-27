@@ -38,10 +38,11 @@ const Header = () => {
               <div className="absolute inset-0 gradient-primary rounded-2xl blur-lg opacity-60 group-hover:opacity-100 transition-opacity duration-300"></div>
               <div className="relative gradient-primary p-2 sm:p-3 rounded-2xl flex items-center justify-center">
                 <img 
-                  src={logo} 
-                  alt="FanFirst Studio Logo" 
-                  className="h-5 w-5 sm:h-7 sm:w-7 object-contain filter brightness-0 invert"
-                />
+  src={logo} 
+  alt="FanFirst Studio Logo" 
+  className="h-8 w-8 sm:h-10 sm:w-10 object-contain filter brightness-0 invert"
+/>
+
               </div>
             </div>
             <div className="flex flex-col">
