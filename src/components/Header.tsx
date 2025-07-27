@@ -2,7 +2,7 @@ import React, { useState, useEffect } from 'react';
 import { Menu, X, Shield, Zap, Globe } from 'lucide-react';
 import { useLanguage } from '../contexts/LanguageContext';
 import LanguageSelector from './LanguageSelector';
-import logo from '../assets/nonamelogo.png';
+import logo from '../assets/nonamelogofixed.png';
 
 const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
