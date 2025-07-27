@@ -273,10 +273,11 @@ const Footer = () => {
               <div className="flex items-center space-x-3 mb-6">
                 <div className="flex items-center">
                   <img 
-                    src={logo} 
-                    alt="FanFirst Studio Logo" 
-                    className="h-12 w-12 sm:h-14 sm:w-14 object-contain filter brightness-0 invert"
-                  />
+  src={logo} 
+  alt="FanFirst Studio Logo" 
+  className="h-16 w-16 sm:h-20 sm:w-20 object-contain filter brightness-0 invert"
+/>
+
                 </div>
                 <div>
                   <span className="text-2xl font-bold text-white drop-shadow-md">
