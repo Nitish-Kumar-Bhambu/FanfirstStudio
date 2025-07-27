@@ -33,28 +33,33 @@ const Header = () => {
     }`}>
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between items-center h-20">
-          <div className="flex items-center gap-3 sm:gap-4 group">
-  {/* Clean gradient wrapper */}
-  <div className="bg-gradient-to-tr from-purple-600 to-pink-500 p-1 rounded-xl">
-    <div className="bg-white rounded-lg w-10 h-10 sm:w-12 sm:h-12 flex items-center justify-center">
+          <div className="flex items-center gap-4 group">
+  {/* Glow Container */}
+  <div className="relative w-14 h-14 sm:w-16 sm:h-16">
+    {/* Subtle Glow */}
+    <div className="absolute inset-0 rounded-full bg-gradient-to-tr from-purple-600 to-pink-500 blur-xl opacity-30 group-hover:opacity-50 transition duration-300"></div>
+
+    {/* Actual Logo Container */}
+    <div className="relative w-full h-full bg-white rounded-full flex items-center justify-center p-2">
       <img
         src={logo}
         alt="FanFirst Studio Logo"
-        className="w-8 h-8 sm:w-10 sm:h-10 object-contain"
+        className="w-full h-full object-contain"
       />
     </div>
   </div>
 
-  {/* Logo Text */}
-  <div className="flex flex-col">
-    <span className="font-display text-lg sm:text-2xl font-bold text-white tracking-tight">
+  {/* Brand Text */}
+  <div className="flex flex-col leading-none">
+    <span className="font-display text-xl sm:text-2xl font-bold text-white tracking-tight">
       FanFirst
     </span>
-    <span className="font-display text-xs sm:text-sm font-medium gradient-text tracking-wider">
+    <span className="font-display text-sm sm:text-base font-medium gradient-text tracking-wider">
       STUDIO
     </span>
   </div>
 
+  {/* Badge */}
   <div className="hidden md:flex items-center ml-4 glass px-3 py-1 rounded-full">
     <Shield className="h-3 w-3 text-purple-400 mr-1" />
     <span className="text-xs text-purple-300 font-semibold tracking-wide">ELITE</span>
