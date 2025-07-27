@@ -227,7 +227,7 @@ const Testimonials = () => {
               <Star className="h-6 w-6 text-purple-400 ml-3 animate-pulse" />
             </div>
             <p className="text-gray-300 mb-6 text-lg">
-              Take the first step towards maximizing your earning potential with professional support from industry experts who understand the Asian market.
+              Take the first step towards maximizing your earning potential with professional support from industry experts who understand the Asian market. 
             </p>
             <button 
               onClick={scrollToContact}
