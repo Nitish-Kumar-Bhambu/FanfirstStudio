@@ -37,10 +37,12 @@ const Header = () => {
   <div className="w-24 h-24 sm:w-28 sm:h-28 md:w-32 md:h-32 flex items-center justify-center">
 
     <img 
-      src={logo} 
-      alt="FanFirst Studio Logo" 
-      className="w-full h-full object-contain filter brightness-0 invert"
-    />
+  src={logo}
+  alt="FanFirst Studio Logo"
+  style={{ width: '64px', height: '64px' }} // You can increase this
+  className="object-contain filter brightness-0 invert"
+/>
+
   </div>
 
   <div className="flex flex-col">
