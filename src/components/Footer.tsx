@@ -9,7 +9,7 @@ import {
 import { useLanguage } from '../contexts/LanguageContext';
 import Modal from './Modal';
 import logo from '../assets/nonamelogofixed.png';
-
+ 
 const Footer = () => {
   const { t } = useLanguage();
   const [activeModal, setActiveModal] = useState<string | null>(null);
@@ -273,13 +273,10 @@ const Footer = () => {
               <div className="flex items-center space-x-3 mb-6">
                 <div className="flex items-center">
                   <img 
-  src={logo} 
-  alt="FanFirst Studio Logo" 
-  className="h-50 w-50 sm:h-12 sm:w-12 object-contain filter"
-/>
-
-
-
+                    src={logo} 
+                    alt="FanFirst Studio Logo" 
+                    className="h-12 w-12 sm:h-14 sm:w-14 object-contain filter brightness-0 invert"
+                  />
                 </div>
                 <div>
                   <span className="text-2xl font-bold text-white drop-shadow-md">
