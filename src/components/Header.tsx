@@ -36,28 +36,28 @@ const Header = () => {
           <div className="flex items-center space-x-3 group">
             <div className="relative">
               <div className="absolute inset-0 gradient-primary rounded-2xl blur-lg opacity-60 group-hover:opacity-100 transition-opacity duration-300"></div>
-              <div className="flex items-center gap-4">
-  <img 
-    src={logo}
-    alt="FanFirst Studio Logo"
-    className="w-[80px] h-[80px] object-contain filter brightness-0 invert"
-  />
+              <div className="relative gradient-primary p-3 sm:p-4 rounded-2xl flex items-center justify-center">
 
-  <div className="flex flex-col">
-    <span className="font-display text-2xl font-bold text-white leading-none">
-      FanFirst
-    </span>
-    <span className="font-display text-lg font-medium gradient-text leading-none">
-      STUDIO
-    </span>
-  </div>
-
-  <div className="hidden md:flex items-center ml-4 glass px-3 py-1 rounded-full">
-    <Shield className="h-3 w-3 text-purple-400 mr-1" />
-    <span className="text-xs text-purple-300 font-semibold">ELITE</span>
-  </div>
-</div>
-
+                <img 
+                  src={logo} 
+                  alt="FanFirst Studio Logo" 
+                  className="h-30 w-30 sm:h-7 sm:w-7 object-contain filter brightness-0 invert"
+                />
+              </div>
+            </div> 
+            <div className="flex flex-col">
+              <span className="font-display text-lg sm:text-2xl font-bold text-white tracking-tight"> 
+                FanFirst
+              </span>
+              <span className="font-display text-xs sm:text-sm font-medium gradient-text tracking-wider">
+                STUDIO
+              </span>
+            </div>
+            <div className="hidden md:flex items-center ml-4 glass px-3 py-1 rounded-full">
+              <Shield className="h-3 w-3 text-purple-400 mr-1" />
+              <span className="text-xs text-purple-300 font-semibold tracking-wide">ELITE</span>
+            </div>
+          </div>
           
           <nav className="hidden lg:flex items-center space-x-4 xl:space-x-8">
             {[
