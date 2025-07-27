@@ -34,17 +34,14 @@ const Header = () => {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between items-center h-20">
           <div className="flex items-center space-x-3 group">
-            <div className="relative">
-              
-              <div className="relative gradient-primary p-3 sm:p-4 rounded-2xl flex items-center justify-center">
+            
 
                 <img 
                   src={logo} 
                   alt="FanFirst Studio Logo" 
                   className="h-30 w-30 sm:h-7 sm:w-7 object-contain filter brightness-0 invert"
                 />
-              </div>
-            </div> 
+              
             <div className="flex flex-col">
               <span className="font-display text-lg sm:text-2xl font-bold text-white tracking-tight">
                 FanFirst
