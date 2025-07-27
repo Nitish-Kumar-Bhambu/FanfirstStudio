@@ -36,14 +36,14 @@ const Header = () => {
           <div className="flex items-center space-x-3 group">
             <div className="relative">
               <div className="absolute inset-0 gradient-primary rounded-2xl blur-lg opacity-60 group-hover:opacity-100 transition-opacity duration-300"></div>
-              <div className="relative gradient-primary p-3 sm:p-4 rounded-2xl flex items-center justify-center">
+              <div className="relative gradient-primary p-2 sm:p-3 md:p-4 rounded-2xl flex items-center justify-center h-14 w-14 sm:h-16 sm:w-16 md:h-20 md:w-20">
+  <img 
+    src={logo} 
+    alt="FanFirst Studio Logo" 
+    className="h-full w-full object-contain filter brightness-0 invert"
+  />
+</div>
 
-                <img 
-                  src={logo} 
-                  alt="FanFirst Studio Logo" 
-                  className="h-30 w-30 sm:h-7 sm:w-7 object-contain filter brightness-0 invert"
-                />
-              </div>
             </div>
             <div className="flex flex-col">
               <span className="font-display text-lg sm:text-2xl font-bold text-white tracking-tight">
