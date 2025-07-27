@@ -1,10 +1,9 @@
 import React, { useState, useEffect } from 'react';
-import { Menu, X, Shield, Zap, Globe } from 'lucide-react';
+import { Menu, X, Sparkles, Shield, Zap, Globe } from 'lucide-react';
 import { useLanguage } from '../contexts/LanguageContext';
 import LanguageSelector from './LanguageSelector';
-import logo from '../assets/nonamelogo.png';
 
-const Header = () => { 
+const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const [isScrolled, setIsScrolled] = useState(false);
   const { t } = useLanguage();
@@ -34,12 +33,14 @@ const Header = () => {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between items-center h-20">
           <div className="flex items-center space-x-3 group">
-             
-
-    
-              
+            <div className="relative">
+              <div className="absolute inset-0 gradient-primary rounded-2xl blur-lg opacity-60 group-hover:opacity-100 transition-opacity duration-300"></div>
+              <div className="relative gradient-primary p-2 sm:p-3 rounded-2xl">
+                <Sparkles className="h-5 w-5 sm:h-7 sm:w-7 text-white animate-pulse" />
+              </div>
+            </div>
             <div className="flex flex-col">
-              <span className="font-display text-lg sm:text-2xl font-bold text-white tracking-tight"> 
+              <span className="font-display text-lg sm:text-2xl font-bold text-white tracking-tight">
                 FanFirst
               </span>
               <span className="font-display text-xs sm:text-sm font-medium gradient-text tracking-wider">
