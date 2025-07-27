@@ -31,7 +31,7 @@ const Header = () => {
         ? 'glass-dark shadow-2xl shadow-purple-500/10' 
         : 'bg-transparent'
     }`}>
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      
         <div className="flex justify-between items-center h-20">
           <div className="flex items-center space-x-3 group">
              
@@ -54,7 +54,7 @@ const Header = () => {
               <Shield className="h-3 w-3 text-purple-400 mr-1" />
               <span className="text-xs text-purple-300 font-semibold tracking-wide">ELITE</span>
             </div>
-          </div>
+          
           
           <nav className="hidden lg:flex items-center space-x-4 xl:space-x-8">
             {[
