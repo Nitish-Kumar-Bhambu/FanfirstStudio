@@ -275,8 +275,9 @@ const Footer = () => {
                   <img 
   src={logo} 
   alt="FanFirst Studio Logo" 
-  className="h-30 w-30 sm:h-20 sm:w-20 object-contain filter brightness-0 invert"
+  className="max-w-[80px] sm:max-w-[100px] h-auto object-contain filter brightness-0 invert"
 />
+
 
                 </div>
                 <div>
