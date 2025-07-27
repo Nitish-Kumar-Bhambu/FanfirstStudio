@@ -275,7 +275,7 @@ const Footer = () => {
                   <img 
   src={logo} 
   alt="FanFirst Studio Logo" 
-  className="h-50 w-50 sm:h-12 sm:w-12 object-contain filter brightness-0 invert"
+  className="h-50 w-50 sm:h-12 sm:w-12 object-contain filter"
 />
 
 
